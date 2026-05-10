@@ -3,150 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canım Anneme Sürpriz</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Canım Anneme Özel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --ana-renk: #ff4d6d;
+            --soft-pink: #ff85a1;
+            --gold: #d4a373;
+        }
+
         body {
             margin: 0;
             padding: 0;
-            background-color: #fff5f5;
+            background: #fff5f7;
             font-family: 'Poppins', sans-serif;
-            color: #4a4a4a;
+            color: #333;
         }
 
-        .header {
-            height: 60vh;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('annem.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
+        /* Giriş Başlığı */
+        .header-top {
+            padding: 60px 20px;
             text-align: center;
-            border-bottom: 10px solid #f9dcc4;
+            background: white;
         }
 
-        .header h1 {
-            font-family: 'Playfair Display', serif;
+        .header-top h1 {
+            font-family: 'Dancing Script', cursive;
             font-size: 4rem;
+            color: var(--ana-renk);
             margin: 0;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
         }
 
+        /* Konteyner */
         .container {
             max-width: 900px;
-            margin: -50px auto 50px;
+            margin: 0 auto;
             padding: 20px;
         }
 
-        .card {
+        /* Resim Kartları */
+        .milestone-card {
             background: white;
-            margin-bottom: 60px;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
+            border-radius: 25px;
+            overflow: hidden;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: 0.3s;
         }
 
-        .card:hover {
-            transform: translateY(-10px);
-        }
+        .milestone-card:hover { transform: translateY(-5px); }
 
-        .card img {
+        .milestone-card img {
             width: 100%;
-            max-width: 600px;
-            height: auto;
-            border-radius: 15px;
-            margin-bottom: 25px;
-            border: 8px solid #fff9f9;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            height: 500px;
+            object-fit: cover;
         }
 
-        .card h2 {
-            font-family: 'Playfair Display', serif;
-            color: #d4a373;
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #666;
-            font-style: italic;
-        }
-
-        .final-message {
-            background: #f9dcc4;
-            padding: 80px 20px;
+        .card-body {
+            padding: 30px;
             text-align: center;
-            border-radius: 30px;
-            margin-top: 100px;
         }
 
-        .final-message h3 {
+        .card-body h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: #8e5d52;
+            color: var(--gold);
+            margin-top: 0;
+        }
+
+        .card-body p {
+            font-style: italic;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        /* FİNAL BÖLÜMÜ: annem.jpg burada */
+        .final-section {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 50px;
+            border-top: 5px solid var(--ana-renk);
+        }
+
+        .final-photo-wrapper {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            border: 15px solid white;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+
+        .final-photo-wrapper img {
+            width: 100%;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .final-text {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: var(--ana-renk);
+            margin: 20px 0;
         }
 
         footer {
-            text-align: center;
             padding: 40px;
-            font-size: 0.9rem;
-            color: #999;
+            text-align: center;
+            background: var(--ana-renk);
+            color: white;
+            font-weight: 600;
         }
 
         @media (max-width: 600px) {
-            .header h1 { font-size: 2.5rem; }
-            .card { padding: 20px; }
+            .header-top h1 { font-size: 2.5rem; }
+            .milestone-card img { height: 300px; }
+            .final-text { font-size: 2.2rem; }
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>Anneler Günün Kutlu Olsun</h1>
-        <p style="font-size: 1.5rem;">Dünyanın En Güzel Annesine...</p>
+    <div class="header-top">
+        <h1>Canım Annem İçin...</h1>
+        <p>Seninle geçen her an bir hazine.</p>
     </div>
 
     <div class="container">
-        <div class="card">
+        <div class="milestone-card">
             <img src="resim1.jpeg" alt="Bebeklik">
-            <h2>Yolun En Başında</h2>
-            <p>"Dünyaya gözlerimi ilk açtığımda, karşılaştığım ilk sevgi sendin. Senin kucağın benim ilk yuvam, kokun ise en huzurlu sığınağım oldu."</p>
+            <div class="card-body">
+                <h2>Cennetin İlk Kokusu</h2>
+                <p>"Senin kucağın benim ilk dünyamdı. Henüz hiçbir şey bilmezken, sevginin ne demek olduğunu senin kokundan öğrendim."</p>
+            </div>
         </div>
 
-        <div class="card">
+        <div class="milestone-card">
             <img src="resim2.jpeg" alt="Çocukluk">
-            <h2>Küçük Adımlar, Büyük Sevgi</h2>
-            <p>"Düştüğüm her an ellerimden tutan, ağladığımda gözyaşımı silen sendin. Seninle büyümek, hayatın en güzel hediyesiymiş."</p>
+            <div class="card-body">
+                <h2>İlk Adımlar, İlk Heyecanlar</h2>
+                <p>"Bana sadece yürümeyi değil, hayata karşı cesur olmayı öğrettin. Düştüğümde ellerini uzatacağını bilmek bana her zaman güç verdi."</p>
+            </div>
         </div>
 
-        <div class="card">
+        <div class="milestone-card">
             <img src="resim3.jpeg" alt="Okul">
-            <h2>Birlikte Keşfettik</h2>
-            <p>"Okulun ilk gününden bugüne kadar, başarılarımda en çok senin payın var. Sen sadece annem değil, en büyük destekçim ve rehberimsin."</p>
+            <div class="card-body">
+                <h2>Başarılarımın Mimarı</h2>
+                <p>"Okulun ilk gününden bugünlere gelene kadar, her adımımda arkamdaki o koca dağ gibi durduğun için teşekkür ederim."</p>
+            </div>
         </div>
 
-        <div class="card">
-            <img src="resim4.jpeg" alt="Şimdi">
-            <h2>Her Zaman Yan Yanayız</h2>
-            <p>"Zaman geçse de senin yanındaki o çocuk ruhum hiç değişmiyor. Varlığınla hayatıma kattığın tüm renkler için sana binlerce kez teşekkür ederim."</p>
-        </div>
-
-        <div class="final-message">
-            <h3>Seni Çok Seviyorum Canım Annem!</h3>
-            <p style="font-size: 1.3rem; margin-top: 20px;">İyi ki benim annemsin, iyi ki varsın.</p>
-            <div style="margin-top: 30px; font-size: 2rem;">❤️</div>
+        <div class="milestone-card">
+            <img src="resim4.jpeg" alt="Bugün">
+            <div class="card-body">
+                <h2>Daima Seninleyim</h2>
+                <p>"Zaman geçse de, yollar değişse de kalbimdeki yerin hep aynı. Sen benim en iyi dostum, en büyük kahramanımsın."</p>
+            </div>
         </div>
     </div>
 
+    <section class="final-section">
+        <div class="final-photo-wrapper">
+            <img src="annem.jpg" alt="Canım Annem">
+        </div>
+        <h2 class="final-text">Anneler Günün Kutlu Olsun!</h2>
+        <p style="font-size: 1.4rem; color: #555; max-width: 600px; margin: 0 auto;">
+            Seni dünyadaki her şeyden daha çok seviyorum. İyi ki benim annemsin, iyi ki varsın!
+        </p>
+        <div style="font-size: 3rem; margin-top: 20px;">🌹💖✨</div>
+    </section>
+
     <footer>
-        Anneler Günü Özel Tasarımı &copy; 2026
+        Dünyanın En Güzel Annesine Sevgilerimle &copy; 2026
     </footer>
 
 </body>
