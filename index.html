@@ -19,75 +19,76 @@
             color: #333;
         }
 
-        .header-top { padding: 60px 20px; text-align: center; background: white; }
+        .header-top { padding: 60px 20px; text-align: center; background: white; border-bottom: 3px solid var(--ana-renk); }
         .header-top h1 { font-family: 'Dancing Script', cursive; font-size: 4rem; color: var(--ana-renk); margin: 0; }
 
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; }
 
         .milestone-card {
             background: white; border-radius: 25px; overflow: hidden;
-            margin-bottom: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            margin-bottom: 50px; box-shadow: 0 15px 35px rgba(255, 77, 109, 0.1);
+            transition: 0.3s;
         }
 
-        .milestone-card img { width: 100%; height: 500px; object-fit: cover; }
-        .card-body { padding: 30px; text-align: center; }
-        .card-body h2 { font-family: 'Playfair Display', serif; color: var(--gold); }
+        .milestone-card img { width: 100%; height: auto; max-height: 550px; object-fit: cover; display: block; }
+        .card-body { padding: 35px; text-align: center; }
+        .card-body h2 { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 2rem; margin-top: 0; }
+        .card-body p { font-style: italic; font-size: 1.2rem; line-height: 1.8; color: #555; }
 
-        /* FİNAL BÖLÜMÜ */
         .final-section {
-            background: white; padding: 60px 20px; text-align: center;
-            margin-top: 50px; border-top: 5px solid var(--ana-renk);
+            background: white; padding: 80px 20px; text-align: center;
+            margin-top: 50px; border-top: 8px solid var(--ana-renk);
         }
 
         .final-photo-wrapper {
-            max-width: 700px; margin: 0 auto 30px;
-            border: 15px solid white; box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-            border-radius: 10px;
+            max-width: 750px; margin: 0 auto 40px;
+            border: 15px solid white; box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+            border-radius: 15px;
         }
 
-        .final-photo-wrapper img { width: 100%; display: block; }
-        .final-text { font-family: 'Dancing Script', cursive; font-size: 3.5rem; color: var(--ana-renk); margin: 20px 0; }
+        .final-photo-wrapper img { width: 100%; display: block; border-radius: 5px; }
+        .final-text { font-family: 'Dancing Script', cursive; font-size: 4rem; color: var(--ana-renk); margin: 25px 0; }
 
-        footer { padding: 40px; text-align: center; background: var(--ana-renk); color: white; }
+        footer { padding: 50px; text-align: center; background: var(--ana-renk); color: white; font-weight: bold; }
     </style>
 </head>
 <body>
 
     <div class="header-top">
         <h1>Canım Annem İçin...</h1>
-        <p>Seninle geçen her an bir hazine.</p>
+        <p>Seninle geçen her an en büyük hazinem.</p>
     </div>
 
     <div class="container">
         <div class="milestone-card">
-            <img src="resim1.jpeg.jpeg" alt="Bebeklik">
+            <img src="resim1.jpeg" alt="Bebeklik">
             <div class="card-body">
                 <h2>Cennetin İlk Kokusu</h2>
-                <p>"Sevginin ne demek olduğunu senin kokundan öğrendim."</p>
+                <p>"Sevginin ne demek olduğunu senin şefkat dolu kucağında öğrendim."</p>
             </div>
         </div>
 
         <div class="milestone-card">
-            <img src="resim2.jpeg.jpeg" alt="Çocukluk">
+            <img src="resim2.jpeg" alt="Çocukluk">
             <div class="card-body">
-                <h2>İlk Adımlar</h2>
-                <p>"Bana hayata karşı cesur olmayı öğrettin."</p>
+                <h2>İlk Adımlar, İlk Gülüşler</h2>
+                <p>"Bana sadece yürümeyi değil, hayata karşı dik durmayı da öğrettin."</p>
             </div>
         </div>
 
         <div class="milestone-card">
-            <img src="resim3.jpeg.jpeg" alt="Okul">
+            <img src="resim3.jpeg" alt="Okul">
             <div class="card-body">
-                <h2>Başarılarımın Mimarı</h2>
-                <p>"Her adımımda arkamdaki o koca dağ gibi durdun."</p>
+                <h2>Başarılarımın Gizli Mimarı</h2>
+                <p>"Her başarımda senin gururunu, her hatamda senin sonsuz sabrını gördüm."</p>
             </div>
         </div>
 
         <div class="milestone-card">
-            <img src="resim4.jpeg.jpeg" alt="Bugün">
+            <img src="resim4.jpeg" alt="Bugün">
             <div class="card-body">
                 <h2>Daima Seninleyim</h2>
-                <p>"Sen benim en iyi dostum, en büyük kahramanımsın."</p>
+                <p>"Sen benim en iyi dostum, hayat boyu sığındığım tek limanımsın."</p>
             </div>
         </div>
     </div>
@@ -97,8 +98,10 @@
             <img src="annem.jpeg" alt="Canım Annem">
         </div>
         <h2 class="final-text">Anneler Günün Kutlu Olsun!</h2>
-        <p style="font-size: 1.4rem; color: #555;">Seni dünyadaki her şeyden daha çok seviyorum.</p>
-        <div style="font-size: 3rem; margin-top: 20px;">🌹💖✨</div>
+        <p style="font-size: 1.6rem; color: #444; max-width: 700px; margin: 0 auto; font-family: 'Playfair Display', serif;">
+            Seni dünyadaki her şeyden daha çok seviyorum. İyi ki benim annemsin!
+        </p>
+        <div style="font-size: 4rem; margin-top: 30px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));">🌹💖✨</div>
     </section>
 
     <footer>
