@@ -3,103 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canım Anneme Mektup</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:italic,wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>Canım Anneme Sürpriz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #fcf8f8;
+            background-color: #fff5f5;
             font-family: 'Poppins', sans-serif;
-            color: #333;
+            color: #4a4a4a;
+        }
+
+        .header {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('annem.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
             text-align: center;
+            border-bottom: 10px solid #f9dcc4;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 50px 20px;
+            max-width: 900px;
+            margin: -50px auto 50px;
+            padding: 20px;
         }
 
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: #8e5d52;
-            margin-bottom: 50px;
-        }
-
-        .section {
-            margin-bottom: 80px;
+        .card {
             background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
         }
 
-        .section img {
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
             width: 100%;
-            max-width: 500px;
+            max-width: 600px;
             height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            border: 5px solid #fff;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            border: 8px solid #fff9f9;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        h2 {
+        .card h2 {
             font-family: 'Playfair Display', serif;
             color: #d4a373;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
             font-style: italic;
         }
 
-        p {
-            line-height: 1.8;
-            font-size: 1.1rem;
-            color: #555;
-            padding: 0 20px;
+        .final-message {
+            background: #f9dcc4;
+            padding: 80px 20px;
+            text-align: center;
+            border-radius: 30px;
+            margin-top: 100px;
+        }
+
+        .final-message h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #8e5d52;
         }
 
         footer {
-            padding: 50px;
-            background: #f9dcc4;
-            color: #8e5d52;
-            font-weight: bold;
-            margin-top: 50px;
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 { font-size: 2.5rem; }
+            .card { padding: 20px; }
         }
     </style>
 </head>
 <body>
 
+    <div class="header">
+        <h1>Anneler Günün Kutlu Olsun</h1>
+        <p style="font-size: 1.5rem;">Dünyanın En Güzel Annesine...</p>
+    </div>
+
     <div class="container">
-        <h1>Canım Anneme...</h1>
-
-        <div class="section">
+        <div class="card">
             <img src="resim1.jpeg" alt="Bebeklik">
-            <h2>Her Şeyin Başlangıcı</h2>
-            <p>Dünyaya dair hiçbir şey bilmezken, sığındığım tek liman senin kucağındı. Kokun, hayatın en güvenli tarifidir benim için.</p>
+            <h2>Yolun En Başında</h2>
+            <p>"Dünyaya gözlerimi ilk açtığımda, karşılaştığım ilk sevgi sendin. Senin kucağın benim ilk yuvam, kokun ise en huzurlu sığınağım oldu."</p>
         </div>
 
-        <div class="section">
+        <div class="card">
             <img src="resim2.jpeg" alt="Çocukluk">
-            <h2>İlk Adımlar</h2>
-            <p>Düştüğümde canımın yanmasından çok senin beni kaldıracağını bilmenin huzuruyla büyüdüm. Sen benim ilk öğretmenim, ilk oyun arkadaşımdın.</p>
+            <h2>Küçük Adımlar, Büyük Sevgi</h2>
+            <p>"Düştüğüm her an ellerimden tutan, ağladığımda gözyaşımı silen sendin. Seninle büyümek, hayatın en güzel hediyesiymiş."</p>
         </div>
 
-        <div class="section">
-            <img src="resim3.jpeg" alt="Okul Yılları">
-            <h2>Okul Yılları ve Keşifler</h2>
-            <p>Ben hayatı keşfederken, sen arkamdaki dağ gibi durdun. Başarılarımda gururun, hatalarımda ise şefkatinle hep yanımdaydın.</p>
+        <div class="card">
+            <img src="resim3.jpeg" alt="Okul">
+            <h2>Birlikte Keşfettik</h2>
+            <p>"Okulun ilk gününden bugüne kadar, başarılarımda en çok senin payın var. Sen sadece annem değil, en büyük destekçim ve rehberimsin."</p>
         </div>
 
-        <div class="section">
-            <img src="resim4.jpeg" alt="Bugün">
-            <h2>İyi Ki Varsın</h2>
-            <p>Bugün olduğum kişi olmamın en büyük sebebi senin sonsuz sevgin. Ellerinden öperim canım annem, günün kutlu olsun!</p>
+        <div class="card">
+            <img src="resim4.jpeg" alt="Şimdi">
+            <h2>Her Zaman Yan Yanayız</h2>
+            <p>"Zaman geçse de senin yanındaki o çocuk ruhum hiç değişmiyor. Varlığınla hayatıma kattığın tüm renkler için sana binlerce kez teşekkür ederim."</p>
+        </div>
+
+        <div class="final-message">
+            <h3>Seni Çok Seviyorum Canım Annem!</h3>
+            <p style="font-size: 1.3rem; margin-top: 20px;">İyi ki benim annemsin, iyi ki varsın.</p>
+            <div style="margin-top: 30px; font-size: 2rem;">❤️</div>
         </div>
     </div>
 
     <footer>
-        Seni Çok Seviyorum!
+        Anneler Günü Özel Tasarımı &copy; 2026
     </footer>
 
 </body>
