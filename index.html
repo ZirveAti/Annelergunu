@@ -13,112 +13,42 @@
         }
 
         body {
-            margin: 0;
-            padding: 0;
+            margin: 0; padding: 0;
             background: #fff5f7;
             font-family: 'Poppins', sans-serif;
             color: #333;
         }
 
-        /* Giriş Başlığı */
-        .header-top {
-            padding: 60px 20px;
-            text-align: center;
-            background: white;
-        }
+        .header-top { padding: 60px 20px; text-align: center; background: white; }
+        .header-top h1 { font-family: 'Dancing Script', cursive; font-size: 4rem; color: var(--ana-renk); margin: 0; }
 
-        .header-top h1 {
-            font-family: 'Dancing Script', cursive;
-            font-size: 4rem;
-            color: var(--ana-renk);
-            margin: 0;
-        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
 
-        /* Konteyner */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Resim Kartları */
         .milestone-card {
-            background: white;
-            border-radius: 25px;
-            overflow: hidden;
-            margin-bottom: 50px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            transition: 0.3s;
+            background: white; border-radius: 25px; overflow: hidden;
+            margin-bottom: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);
         }
 
-        .milestone-card:hover { transform: translateY(-5px); }
+        .milestone-card img { width: 100%; height: 500px; object-fit: cover; }
+        .card-body { padding: 30px; text-align: center; }
+        .card-body h2 { font-family: 'Playfair Display', serif; color: var(--gold); }
 
-        .milestone-card img {
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-        }
-
-        .card-body {
-            padding: 30px;
-            text-align: center;
-        }
-
-        .card-body h2 {
-            font-family: 'Playfair Display', serif;
-            color: var(--gold);
-            margin-top: 0;
-        }
-
-        .card-body p {
-            font-style: italic;
-            line-height: 1.7;
-            font-size: 1.1rem;
-        }
-
-        /* FİNAL BÖLÜMÜ: annem.jpg burada */
+        /* FİNAL BÖLÜMÜ */
         .final-section {
-            background: white;
-            padding: 60px 20px;
-            text-align: center;
-            margin-top: 50px;
-            border-top: 5px solid var(--ana-renk);
+            background: white; padding: 60px 20px; text-align: center;
+            margin-top: 50px; border-top: 5px solid var(--ana-renk);
         }
 
         .final-photo-wrapper {
-            max-width: 700px;
-            margin: 0 auto 30px;
-            border: 15px solid white;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            max-width: 700px; margin: 0 auto 30px;
+            border: 15px solid white; box-shadow: 0 20px 50px rgba(0,0,0,0.2);
             border-radius: 10px;
         }
 
-        .final-photo-wrapper img {
-            width: 100%;
-            display: block;
-            border-radius: 5px;
-        }
+        .final-photo-wrapper img { width: 100%; display: block; }
+        .final-text { font-family: 'Dancing Script', cursive; font-size: 3.5rem; color: var(--ana-renk); margin: 20px 0; }
 
-        .final-text {
-            font-family: 'Dancing Script', cursive;
-            font-size: 3.5rem;
-            color: var(--ana-renk);
-            margin: 20px 0;
-        }
-
-        footer {
-            padding: 40px;
-            text-align: center;
-            background: var(--ana-renk);
-            color: white;
-            font-weight: 600;
-        }
-
-        @media (max-width: 600px) {
-            .header-top h1 { font-size: 2.5rem; }
-            .milestone-card img { height: 300px; }
-            .final-text { font-size: 2.2rem; }
-        }
+        footer { padding: 40px; text-align: center; background: var(--ana-renk); color: white; }
     </style>
 </head>
 <body>
@@ -130,46 +60,44 @@
 
     <div class="container">
         <div class="milestone-card">
-            <img src="resim1.jpeg" alt="Bebeklik">
+            <img src="resim1.jpeg.jpeg" alt="Bebeklik">
             <div class="card-body">
                 <h2>Cennetin İlk Kokusu</h2>
-                <p>"Senin kucağın benim ilk dünyamdı. Henüz hiçbir şey bilmezken, sevginin ne demek olduğunu senin kokundan öğrendim."</p>
+                <p>"Sevginin ne demek olduğunu senin kokundan öğrendim."</p>
             </div>
         </div>
 
         <div class="milestone-card">
-            <img src="resim2.jpeg" alt="Çocukluk">
+            <img src="resim2.jpeg.jpeg" alt="Çocukluk">
             <div class="card-body">
-                <h2>İlk Adımlar, İlk Heyecanlar</h2>
-                <p>"Bana sadece yürümeyi değil, hayata karşı cesur olmayı öğrettin. Düştüğümde ellerini uzatacağını bilmek bana her zaman güç verdi."</p>
+                <h2>İlk Adımlar</h2>
+                <p>"Bana hayata karşı cesur olmayı öğrettin."</p>
             </div>
         </div>
 
         <div class="milestone-card">
-            <img src="resim3.jpeg" alt="Okul">
+            <img src="resim3.jpeg.jpeg" alt="Okul">
             <div class="card-body">
                 <h2>Başarılarımın Mimarı</h2>
-                <p>"Okulun ilk gününden bugünlere gelene kadar, her adımımda arkamdaki o koca dağ gibi durduğun için teşekkür ederim."</p>
+                <p>"Her adımımda arkamdaki o koca dağ gibi durdun."</p>
             </div>
         </div>
 
         <div class="milestone-card">
-            <img src="resim4.jpeg" alt="Bugün">
+            <img src="resim4.jpeg.jpeg" alt="Bugün">
             <div class="card-body">
                 <h2>Daima Seninleyim</h2>
-                <p>"Zaman geçse de, yollar değişse de kalbimdeki yerin hep aynı. Sen benim en iyi dostum, en büyük kahramanımsın."</p>
+                <p>"Sen benim en iyi dostum, en büyük kahramanımsın."</p>
             </div>
         </div>
     </div>
 
     <section class="final-section">
         <div class="final-photo-wrapper">
-            <img src="annem.jpg" alt="Canım Annem">
+            <img src="annem.jpeg" alt="Canım Annem">
         </div>
         <h2 class="final-text">Anneler Günün Kutlu Olsun!</h2>
-        <p style="font-size: 1.4rem; color: #555; max-width: 600px; margin: 0 auto;">
-            Seni dünyadaki her şeyden daha çok seviyorum. İyi ki benim annemsin, iyi ki varsın!
-        </p>
+        <p style="font-size: 1.4rem; color: #555;">Seni dünyadaki her şeyden daha çok seviyorum.</p>
         <div style="font-size: 3rem; margin-top: 20px;">🌹💖✨</div>
     </section>
 
