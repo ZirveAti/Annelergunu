@@ -3,210 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anneme Mektup</title>
+    <title>Canım Anneme Mektup</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:italic,wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg-color: #fcf8f8;
-            --accent-color: #d4a373;
-            --text-dark: #333;
-            --soft-pink: #f9dcc4;
-        }
-
         body {
             margin: 0;
             padding: 0;
-            background-color: var(--bg-color);
+            background-color: #fcf8f8;
             font-family: 'Poppins', sans-serif;
-            color: var(--text-dark);
-            overflow-x: hidden;
+            color: #333;
+            text-align: center;
         }
 
-        /* Giriş Ekranı */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('arkaplan.jpg'); /* İsteğe bağlı */
-            background-size: cover;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 20px;
         }
 
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            margin-bottom: 10px;
+            font-size: 3rem;
             color: #8e5d52;
+            margin-bottom: 50px;
         }
 
-        .scroll-down {
-            margin-top: 20px;
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            animation: bounce 2s infinite;
+        .section {
+            margin-bottom: 80px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
 
-        /* Zaman Tüneli */
-        .timeline {
-            position: relative;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 100px 20px;
-        }
-
-        .story-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 150px;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1.2s ease-out;
-        }
-
-        .story-item.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .image-wrapper {
-            position: relative;
+        .section img {
             width: 100%;
-            max-width: 600px;
-        }
-
-        .image-wrapper img {
-            width: 100%;
+            max-width: 500px;
             height: auto;
-            border-radius: 2px;
-            filter: sepia(20%);
-            box-shadow: 20px 20px 0px var(--soft-pink);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        .text-content {
-            margin-top: 40px;
-            text-align: center;
-            max-width: 700px;
-        }
-
-        .date {
+        h2 {
             font-family: 'Playfair Display', serif;
+            color: #d4a373;
             font-style: italic;
-            font-size: 1.5rem;
-            color: var(--accent-color);
         }
 
-        .description {
-            font-size: 1.15rem;
+        p {
             line-height: 1.8;
-            margin-top: 15px;
+            font-size: 1.1rem;
+            color: #555;
+            padding: 0 20px;
         }
 
-        /* Final Bölümü */
-        .final-section {
-            background-color: #8e5d52;
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-        }
-
-        .final-image {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid white;
-            margin-bottom: 30px;
-        }
-
-        .final-note {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-            40% {transform: translateY(-10px);}
-            60% {transform: translateY(-5px);}
+        footer {
+            padding: 50px;
+            background: #f9dcc4;
+            color: #8e5d52;
+            font-weight: bold;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
 
-    <section class="hero">
-        <h1>Birlikte Büyüdük...</h1>
-        <p>Senin ellerinde filizlenen bir ömrün hikayesi.</p>
-        <div class="scroll-down">Aşağı Kaydır ↓</div>
-    </section>
+    <div class="container">
+        <h1>Canım Anneme...</h1>
 
-    <div class="timeline">
-        <div class="story-item">
-            <div class="image-wrapper">
-                <img src="resim1.jpg" alt="Bebeklik">
-            </div>
-            <div class="text-content">
-                <div class="date">Her Şeyin Başlangıcı</div>
-                <p class="description">Dünyaya dair hiçbir şey bilmezken, sığındığım tek liman senin kucağındı. Kokun, hayatın en güvenli tarifidir benim için.</p>
-            </div>
+        <div class="section">
+            <img src="resim1.jpeg" alt="Bebeklik">
+            <h2>Her Şeyin Başlangıcı</h2>
+            <p>Dünyaya dair hiçbir şey bilmezken, sığındığım tek liman senin kucağındı. Kokun, hayatın en güvenli tarifidir benim için.</p>
         </div>
 
-        <div class="story-item">
-            <div class="image-wrapper">
-                <img src="resim2.jpg" alt="Çocukluk">
-            </div>
-            <div class="text-content">
-                <div class="date">İlk Adımlar</div>
-                <p class="description">Düştüğümde canımın yanmasından çok senin beni kaldıracağını bilmenin huzuruyla büyüdüm. Sen benim ilk öğretmenim, ilk oyun arkadaşımdın.</p>
-            </div>
+        <div class="section">
+            <img src="resim2.jpeg" alt="Çocukluk">
+            <h2>İlk Adımlar</h2>
+            <p>Düştüğümde canımın yanmasından çok senin beni kaldıracağını bilmenin huzuruyla büyüdüm. Sen benim ilk öğretmenim, ilk oyun arkadaşımdın.</p>
         </div>
 
-        <div class="story-item">
-            <div class="image-wrapper">
-                <img src="resim3.jpg" alt="Okul">
-            </div>
-            <div class="text-content">
-                <div class="date">Okul Yılları ve Keşifler</div>
-                <p class="description">Ben hayatı keşfederken, sen arkamdaki dağ gibi durdun. Başarılarımda gururun, hüzünlerimde tesellin hiç eksik olmadı.</p>
-            </div>
+        <div class="section">
+            <img src="resim3.jpeg" alt="Okul Yılları">
+            <h2>Okul Yılları ve Keşifler</h2>
+            <p>Ben hayatı keşfederken, sen arkamdaki dağ gibi durdun. Başarılarımda gururun, hatalarımda ise şefkatinle hep yanımdaydın.</p>
         </div>
 
-        <div class="story-item">
-            <div class="image-wrapper">
-                <img src="resim4.jpg" alt="Gençlik">
-            </div>
-            <div class="text-content">
-                <div class="date">Ve Bugün...</div>
-                <p class="description">Boyum seni geçse de, yaşım kaç olursa olsun, kalbimdeki yerin hep o ilk günkü kadar muhtaç sana. Karakterimdeki her güzel izin sahibi sensin.</p>
-            </div>
+        <div class="section">
+            <img src="resim4.jpeg" alt="Bugün">
+            <h2>İyi Ki Varsın</h2>
+            <p>Bugün olduğum kişi olmamın en büyük sebebi senin sonsuz sevgin. Ellerinden öperim canım annem, günün kutlu olsun!</p>
         </div>
     </div>
 
-    <section class="final-section">
-        <img src="annem.jpg" alt="Annem" class="final-image">
-        <div class="final-note">
-            "Sen benim sadece annem değil; şefkatim, gücüm ve en güzel manzaramısın. Varlığın hayatımın en büyük hediyesi."
-            <br><br>
-            <strong>Anneler Günün Kutlu Olsun!</strong>
-        </div>
-    </section>
+    <footer>
+        Seni Çok Seviyorum!
+    </footer>
 
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, { threshold: 0.2 });
-
-        document.querySelectorAll('.story-item').forEach(item => {
-            observer.observe(item);
-        });
-    </script>
 </body>
 </html>
